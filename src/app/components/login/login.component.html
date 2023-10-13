@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+      <!-- Formulario de inicio de sesión a la izquierda -->
+      <div class="col-md-6">
+        <div class="login">
+          <h2 class="login-header">Iniciar Sesión</h2>
+          <form class="login-container" (ngSubmit)="login()">
+            <p><input type="email" name="email" id="email" required [(ngModel)]="correo" placeholder="Usuario"></p>
+            <p><input type="password" placeholder="Contraseña"></p>
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="6LeP6G4UAAAAAHfR-1W_BVHjfGoW1xViUHDShqSd"></div>
+            </div>
+            <p><button *ngIf="!correo.includes('@cafam.com')" type="submit">Login</button></p>
+            <p><button *ngIf="correo.includes('@cafam.com')" type="submit">Login Directorio</button></p>
+            <!-- Botones "Olvidó contraseña" y "Olvidó usuario" -->
+            <div class="forgot-buttons">
+              <button mat-mini-fab (click)="openForgotPasswordDialog()" type="button">¿Olvido Contraseña?</button>
+              <button mat-mini-fab (click)="openForgotUsernameDialog()" type="button">¿Olvido Usuario?</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Imagen informativa a la derecha -->
+      <div class="col-md-6">
+        <div class="static-image-container">
+          <!-- Cambia la ruta de la imagen según la ubicación de tu archivo de imagen -->
+          <img src="../../../assets/imgs/NBFC_2.jpg" alt="Imagen Estática">
+        </div>
+      </div>
+    </div>
+  </div>

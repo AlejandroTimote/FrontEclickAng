@@ -1,0 +1,284 @@
+@media (max-width: 767px){
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para pantallas de 768px a 991px de ancho */
+}
+/*Pantallas pequeñas (laptops y monitores pequeños)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor{
+        background-color: #343a40;
+        height: 35vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logoeClick{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        height: 7vh;
+    }
+    .politicas{
+        position: relative;
+        left: 5%;
+        top: 35%;
+        font-size: 0.8rem;
+        display: flex;
+        height: 50%;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .txtPolitica{
+        color: white;
+        display: flex;
+    }
+    .filaIzquierda{
+        position: relative;
+        left: 15%;
+    }
+    .filaDerecha{
+        position: relative;
+        left: 10%;
+    }
+    .separadorLink::before{
+        content: "";
+        display: block;
+        height: 5vh;
+    }
+    .logos{
+        cursor: pointer;
+        height: 7vh;
+    }
+    .separador::before{
+        content: "";
+        display: block;
+        position: relative;
+        background-color: white;
+        height: 5vh;
+        width: 0.5vh;
+        left: 80%;
+        top: 30%;
+    }
+    .contenedorLogos{
+        position: relative;
+        top: 35%;
+        left: 10%; 
+        color: white;
+        height: 60%;
+        width: 75%;
+        display: flex;
+    }
+    .divFooter{
+        position: relative;
+        left: 5%;
+    }    
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+    .contenedor{
+        background-color: #343a40;
+        height: 35vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logoeClick{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        height: 7vh;
+    }
+    .politicas{
+        position: relative;
+        left: 5%;
+        top: 35%;
+        font-size: 0.8rem;
+        display: flex;
+        height: 50%;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .txtPolitica{
+        color: white;
+        display: flex;
+    }
+    .filaIzquierda{
+        position: relative;
+        left: 15%;
+    }
+    .filaDerecha{
+        position: relative;
+        left: 10%;
+    }
+    .separadorLink::before{
+        content: "";
+        display: block;
+        height: 5vh;
+    }
+    .logos{
+        cursor: pointer;
+        height: 7vh;
+    }
+    .separador::before{
+        content: "";
+        display: block;
+        position: relative;
+        background-color: white;
+        height: 5vh;
+        width: 0.5vh;
+        left: 80%;
+        top: 30%;
+    }
+    .contenedorLogos{
+        position: relative;
+        top: 35%;
+        left: 10%; 
+        color: white;
+        height: 60%;
+        width: 75%;
+        display: flex;
+    }
+    .divFooter{
+        position: relative;
+        left: 5%;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1500px){
+    .contenedor{
+        background-color: #343a40;
+        height: 35vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logoeClick{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        height: 6vh;
+    }
+    .politicas{
+        position: relative;
+        left: 5%;
+        top: 35%;
+        font-size: 0.8rem;
+        display: flex;
+        height: 50%;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .txtPolitica{
+        color: white;
+        display: flex;
+        font-size: 1rem;
+    }
+    .filaIzquierda{
+        position: relative;
+        left: 5%;
+    }
+    .filaDerecha{
+        position: relative;
+        left: 10%;
+    }
+    .separadorLink::before{
+        content: "";
+        display: block;
+        height: 5vh;
+    }
+    .logos{
+        cursor: pointer;
+        height: 7vh;
+    }
+    .separador::before{
+        content: "";
+        display: block;
+        position: relative;
+        background-color: white;
+        height: 5vh;
+        width: 0.5vh;
+        left: 80%;
+        top: 30%;
+    }
+    .contenedorLogos{
+        position: relative;
+        top: 35%;
+        left: 10%; 
+        color: white;
+        height: 60%;
+        width: 75%;
+        display: flex;
+    }
+    .divFooter{
+        position: relative;
+        left: 5%;
+    }
+}
+@media (min-width: 1501px){
+    .contenedor{
+        background-color: #343a40;
+        height: 35vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logoeClick{
+        position: relative;
+        top: 50%;
+        left: 20%;
+        height: 7vh;
+    }
+    .politicas{
+        position: relative;
+        left: 5%;
+        top: 35%;
+        font-size: 0.8rem;
+        display: flex;
+        height: 50%;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .txtPolitica{
+        color: white;
+        display: flex;
+        font-size: 1.1rem;
+    }
+    .filaIzquierda{
+        position: relative;
+        left: 10%;
+    }
+    .filaDerecha{
+        position: relative;
+        left: 10%;
+    }
+    .separadorLink::before{
+        content: "";
+        display: block;
+        height: 5vh;
+    }
+    .logos{
+        cursor: pointer;
+        height: 6vh;
+    }
+    .separador::before{
+        content: "";
+        display: block;
+        position: relative;
+        background-color: white;
+        height: 5vh;
+        width: 0.5vh;
+        left: 80%;
+        top: 30%;
+    }
+    .contenedorLogos{
+        position: relative;
+        top: 35%;
+        left: 10%; 
+        color: white;
+        height: 60%;
+        width: 75%;
+        display: flex;
+    }
+    .divFooter{
+        position: relative;
+        left: 5%;
+    }    
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <div class="row contenedorCarrrusel">
+      <div class="col contenedorCarrrusel">
+        <div id="carruselInicio" class="carousel slide contenedor" data-bs-ride="carousel">
+          <div class="carousel-inner contenedor">
+            <div class="carousel-indicators" style="bottom: 5%;">
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active indicador" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" class="indicador" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="2" class="indicador" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-item active" data-bs-interval="8000">
+              <div class="divBanner1">
+                <p class="txtBanner">
+                  Con nuestra solución podras gestionar digitalmente factoring y confirming
+                </p>
+                <!-- <button style="position: relative; top: 30%; height: 8vh; width: 20vh; background-color: #a4a4a5; 
+                color: white; border: 3px white; font-size: 1.3rem; border-radius: 5px;">Ver más</button> -->
+                <a href="/contacto" class="btn btn-finan">Ver más</a>
+              </div>
+              <img src="assets/imgs/fondoPC.png" class="imgbanner1" alt="alsea">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+              <div style="background-color: rgba(0, 0, 0, 0.356); position: absolute; width: 100%; height: 100%;">
+                <p class="txtBanner1">
+                  RADIAN
+                </p>
+                <a href="/radian" class="btn infoRadian">Ver más</a>
+              </div>
+              <img src="assets/imgs/fondoRadian.jpg" class="imgbanner2" alt="dominos">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+              <div class="divBanner2">
+                <p class="txtBanner">
+                  Soluciones de recepción electrónica y portal de proveedores
+                </p>
+                <a href="/factelectronica" class="btn infoFactElec">Ver más</a>
+              </div>
+              <img src="assets/imgs/ciudad.png" class="imgbanner3" alt="dominos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row contenedor">
+      <!-- <div class="row contenedorTitulos" #negocios style=" background-color: white;">
+        <div class="contenedorImg">
+          <img class="imgsTitulo" src="https://eclick.com.co/eClick-web/resources/images/general/circulo1.1.png?pfdrid_c=true" alt="">
+        </div>
+      </div> -->
+      <div class="row contenidoNegocio">
+        <div>
+          <h1 class="titulos">eDigital</h1>
+        </div>
+        <div class="row" style="position: relative; margin: 0; padding: 0; width: 100%;">
+          <div class="col col-5 col-sm-5 divNegocio">
+            <div>
+              <p class="txtNegocio">
+                Con eDigital revolucionas la gestión de la liquidez en tu empresa.
+    
+                Contamos con un amplio portafolio de soluciones tecnológicas especializadas que involucran todo el ciclo de tus facturas: 
+                Desde la emisión hasta la venta de tus facturas.
+              </p>
+              <p class="txtNegocio">
+                ¿Cómo empresa o proveedor?
+                Podrás hacer/gestionar el factoring 
+              </p>
+              <p class="txtNegocio">
+                ¿Cómo pagador? Podrás negociar directamente las facturas con tus proveedores ahorrando tiempo y recursos
+              </p>
+    
+            </div>
+          </div>
+          <div class="col col-5 divNegocio imgmobile" style="padding: 0;">
+            <img src="assets/imgs/edigitalnegro.png" alt=""
+            class="imgeclick">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row contenedorNegocioInfo">
+      <div class="col col-12" style="padding: 0; color: white;">
+        <div class="contenidoNegocioInfo">
+          <div class="divNegocioInfo">
+            <h2 class="txtFrase"> <strong>"Eficiencia es hacer mejor lo que ya se está haciendo".  Peter Drucker</strong></h2>
+            <p class="txtNegocioInfo" style="margin-top: 20%">
+              Nuestras unidades de negocio
+            </p>
+            <ul class="txtNegocioInfo">
+              <li class="txtLista">
+                eClick:
+                Desarrollamos una solución tecnológica de negociación electrónica donde podrás realizar Factoring,  Confirming y registrar los eventos ante el RADIAN. 
+              </li>
+              <li class="txtLista">
+                CBM Factoring:
+                Somos una empresa líder en servicios financieros ofreciendo soluciones de intermediación y facilitación en transacciones comerciales donde puedes 
+                anticipar hasta el 100% del valor facturado.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="assets/imgs/fondoPapeleo.jpg" alt="" class="fondoNosotros">
+      </div>
+    </div>
+    <div class="row contenedorGris">
+      <!-- <div class="row contenedorAzulTitulos" style="background-color: #51a4db;">
+        <div style="height: 100%; width: 95%; margin-left: 5%;">
+          <img class="imgsTitulo" src="assets/imgs/fondeooo.png" alt="">
+        </div>
+      </div> -->
+      <div style="height: 10%;">
+        <h1 class="titulosAzul">Nuestros Fondeos</h1>
+      </div>
+      <div class="row contenidoFondeo">
+        <!-- <h2 style="position: relative; right: 20%; color: white; bottom: 5%;">Además contamos con los siguientes fondeadores</h2> -->
+        <div class="col divFondeo">
+          <div id="carruselFondeos" class="carousel slide carruselFondeo carruselfondeopc" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 60%;">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/bancolombia1.png" class="logobancolombia" alt="alsea">
+                <img src="assets/imgs/fondeos/colte.png" class="logocolte" alt="dominos">
+                <img src="assets/imgs/fondeos/corredores.png" class="logocorredores" alt="edatel">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/finamcoBlanco.png" class="logofinamco" alt="emtelco">
+                <img src="assets/imgs/fondeos/avvillas1.png" class="logoavvillas" alt="orbitel">
+              </div>
+            </div>
+          </div>
+          <div id="carruselFondeos1" class="carousel slide carruselFondeo carruselfondeomobile" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 60%; height: 100%;">
+              <div class="carousel-item active " data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/bancolombia1.png" class="logobancolombia" alt="alsea">
+              </div>
+              <div class="carousel-item " data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/corredores.png" class="logocorredores" alt="edatel">
+              </div>
+              <div class="carousel-item " data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/colte.png" class="logocolte" alt="dominos">
+              </div>
+              <div class="carousel-item " data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/finamcoBlanco.png" class="logofinamco" alt="emtelco">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/imgs/fondeos/avvillas1.png" class="logoavvillas" alt="orbitel">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row contenedor">
+      <!-- <div class="row contenedorTitulos" id="radian" style=" background-color: white;">
+        <div class="contenedorImg">
+          <img class="imgsTitulo" src="assets/imgs/radiann.jpg" alt="">
+        </div>
+      </div> -->
+      <div class="row contenidoRadian">
+        <div>
+          <h1 class="titulos">RADIAN(ISO 27001)</h1>
+        </div>
+        <div class="row" style="position: relative; margin: 0; padding: 0; width: 100%;">
+          <div class="col col-6 divRadian">
+            <div>
+              <p class="txtRadian">
+                Adoptamos la implementación del  sistema de gestión de seguridad de la información (SGSI) basado en la norma ISO 27001 para que cuentes con la confianza que requiere el manejo de tus transacciones.
+              </p>
+              <p class="txtRadian">
+                Todas nuestras soluciones cuentan con infraestructura alojada en la nube
+              </p>
+              <p class="txtRadian">
+                Estamos ubicados en la ciudad de Bogota con alcance en toda Colombia/LATAM.
+              </p>
+            </div>
+          </div>
+          <div class="col col-5 imgmobile" style="padding: 0;">
+            <img src="https://eclick-public.s3.us-east-2.amazonaws.com/logos/ISO_IEC_27001_2013.jpeg" alt=""
+            class="imgISO">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row contenedorContacto">
+      <!-- <div class="row contenedorAzulTitulos" #contacto style="background-color: #3167a7;">
+        <div class="contenedorImg">
+          <img class="imgsTitulo" src="assets/imgs/contactus1.jpg" alt="">
+        </div>
+      </div> -->
+      <div class="row contenidoContacto">
+        <div style="height: 20%;">
+          <h1 class="titulosAzul">CONTACTO</h1>
+        </div>
+        <div class="row" style="margin: 0; padding: 0; height: 100%;">
+          <div class="col col-5 txtContacto">
+            <h4>Para información comercial contactése con nosotros, para informacion de pagadores contactése directamente con ellos.</h4>
+          </div>
+          <div class="col col-5 formContacto">
+            <form [formGroup]="formRegister" (submit)="getCorreoContacto()" class="formulario">
+              <input class="form-control inputs" formControlName="Nombres" type="text" style="height: 6vh;" placeholder="Nombres">
+              <input class="form-control inputs" formControlName="Correo" type="text" style="height: 6vh; position: relative; top: 2vh;" placeholder="Email">
+              <input class="form-control inputs" formControlName="Telefono" type="text" style="height: 6vh; position: relative; top: 4vh;" placeholder="Telefono">
+              <input class="form-control inputs" formControlName="Comentarios" type="text" style="height: 15vh;position: relative; top: 6vh;" placeholder="Comentarios">
+              <a class="btn btn-enviar" (click)="getCorreoContacto()">Enviar</a>
+            </form>
+          </div>
+          <div class="col-5 formmobile">
+            <form [formGroup]="formRegister" (submit)="getCorreoContacto()" class="formulario">
+              <input class="inputs" formControlName="Nombres" type="text" style="height: 4vh;" placeholder="Nombres">
+              <input class="inputs" formControlName="Correo" type="text" style="height: 4vh; position: relative; top: 2vh;" placeholder="Email">
+              <input class="inputs" formControlName="Telefono" type="text" style="height: 4vh; position: relative; top: 4vh;" placeholder="Telefono">
+              <input class="inputs" formControlName="Comentarios" type="text" style="height: 10vh;position: relative; top: 6vh;" placeholder="Comentarios">
+              <a class="btn btn-enviar" (click)="getCorreoContacto()">Enviar</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<app-footer class="footer"></app-footer>
+</html>

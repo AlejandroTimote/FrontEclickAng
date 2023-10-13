@@ -1,0 +1,19 @@
+.inputs{
+    width: 60vh;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none; 
+}
+
+.btn-enviar{
+    position: relative;
+    /* left: 45%; */
+    right: 25%;
+    top: 20vh;
+    height: 5vh;
+    width: 20vh;
+    color: #3167a7;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+}

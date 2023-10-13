@@ -1,0 +1,74 @@
+.titulos{
+    position: relative;
+    top: 50%;
+    /* left: 18%; */
+    width: 82%;
+}
+.contenidoNegocio{
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 10vh;
+    /* left: 12%; */
+}
+.divNegocio{
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    padding: 5vh;
+}
+.contenedorTitulos{
+    text-align: left;
+    margin: 0;
+    height: 25vh;
+    width: 90%;
+    padding: 0;
+    position: relative;
+    left: 10%;
+    bottom: 10vh;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 5vh;
+    margin: 0;
+    padding: 0;
+}
+.contenedorImg{
+    height: 100%;
+    width: 95%;
+    margin-left: 5%;
+}
+.txtprincipal{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+.divprincipal{
+    position: relative;
+    left: 15%;
+}
+.margenes{
+    margin: 0;
+    padding: 0;
+}
+.txtfrase{
+    position: relative;
+    top: 20vh;
+    width: 70%;
+    left: 3%;
+}
+.txtsecundario{
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.9rem;
+    width: 55%;
+    position: relative;
+    left: 3%; 
+}
+.txtlista{
+    padding: 4vh;
+}

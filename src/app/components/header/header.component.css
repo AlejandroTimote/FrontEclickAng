@@ -1,0 +1,507 @@
+@media (max-width: 767px){
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .head{
+        background-color:#343a40;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 8vh;
+        width: 100%;
+    }
+    .navbarmobile{
+        display: block;
+        position: relative;
+        left: 25%;
+        top: 25%;
+        width: 50%;
+    }
+    .navbarmobile:hover > .navmobile{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navbar-toggler{
+        background-color: #5782b7;
+        /* color: white; */
+    }
+    .navbar-toggler-icon{
+        /* background-color: #5782b7; */
+        color: white;
+    }
+    .btn-inicio{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        display: none;
+        position: relative;
+        left: 10%;
+        top: 40%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-inicio:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .btn-registro{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        display: none;
+        position: relative;
+        left: 15%;
+        top: 40%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+
+    }
+    .logoHeader{
+        position: relative;
+        left: 5%;
+        top: 25%;
+        height: 3vh;
+        width: auto;
+    }
+    .barraNavegacion{
+        display: none;
+        position: relative;
+        left: 15%;
+        height: 50%;
+        top: 20%;
+        font-size: 1.2rem;
+    }
+    .txtBarra{
+        display: flex;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+    .nav-item:hover{
+        background-color: #73a3ddb2;
+        /* color: #5782b7; */
+        border-radius: 2vh;
+    }
+    .dropdown-item:hover{
+        background-color: #5782b7;
+        color: white;
+        
+    }
+    .contenedor{
+        margin: 0;
+        height: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        /* color: #5782b7; */
+        display: block;
+    }
+    .navmobile{
+        /* display: none; */
+        position: sticky;
+        left: 25%;
+        width: 50%;
+        /* top: 80vh; */
+    }
+    .menupc{
+        display: none;
+    }
+    .menumobile{
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para pantallas de 768px a 991px de ancho */
+}
+/*Pantallas pequeñas (laptops y monitores pequeños)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .head{
+        background-color:#343a40;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 10vh;
+        width: 100%;
+    }
+    .navbarmobile{
+        display: none;
+    }
+    .btn-inicio{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        right: 15%;
+        top: 25%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-inicio:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .btn-registro{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        right: 10%;
+        top: 25%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: white;
+
+    }
+    .logoHeader{
+        position: relative;
+        left: 10%;
+        top: 25%;
+        height: 5vh;
+        width: auto;
+    }
+    .barraNavegacion{
+        position: relative;
+        left: 10%;
+        height: 50%;
+        top: 15%;
+        font-size: 1.2rem;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .nav-item:hover{
+        background-color: #73a3ddb2;
+        /* color: #5782b7; */
+        border-radius: 2vh;
+    }
+    .dropdown-item:hover{
+        background-color: #5782b7;
+        color: white;
+        
+    }
+    .contenedor{
+        margin: 0;
+        height: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        /* color: #5782b7; */
+        display: block;
+    }
+    /* .menupc{
+        display: block;
+    } */
+    .menumobile{
+        display: none;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .head{
+        background-color:#343a40;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 10vh;
+        width: 100%;
+    }
+    .navbarmobile{
+        display: none;
+    }
+    .btn-inicio{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        right: 15%;
+        top: 30%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-inicio:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .btn-registro{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        right: 10%;
+        top: 30%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+        
+    }
+    .btn-registro:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .logoHeader{
+        position: relative;
+        left: 10%;
+        top: 25%;
+        height: 5vh;
+        width: auto;
+    }
+    .barraNavegacion{
+        position: relative;
+        left: 15%;
+        height: 50%;
+        top: 15%;
+        font-size: 1.2rem;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    .nav-item:hover{
+        background-color: #73a3ddb2;
+        /* color: #5782b7; */
+        border-radius: 2vh;
+    }
+    .dropdown-item:hover{
+        background-color: #5782b7;
+        color: white;
+        
+    }
+    .contenedor{
+        margin: 0;
+        height: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        /* color: #5782b7; */
+        display: block;
+    }
+    .menumobile{
+        display: none;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1500px){
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .head{
+        background-color:#343a40;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 10vh;
+        width: 100%;
+    }
+    .navbarmobile{
+        display: none;
+    }
+    .btn-inicio{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        /* left: 10%; */
+        right: 5%;
+        top: 30%;
+        height: 4vh;
+        /* padding-bottom: 2vh; */
+        color: #343a40;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-registro{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        /* right: 10%; */
+        top: 30%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: white;
+
+    }
+    .btn-registro:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .btn-inicio:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .logoHeader{
+        position: relative;
+        left: 15%;
+        top: 25%;
+        height: 5vh;
+        width: auto;
+    }
+    .barraNavegacion{
+        position: relative;
+        left: 20%;
+        height: 50%;
+        top: 20%;
+        font-size: 1.4rem;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .nav-item:hover{
+        background-color: #73a3ddb2;
+        /* color: #5782b7; */
+        border-radius: 2vh;
+    }
+    .dropdown-item:hover{
+        background-color: #5782b7;
+        color: white;
+        
+    }
+    .contenedor{
+        margin: 0;
+        height: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        /* color: #5782b7; */
+        display: block;
+    }
+    .menumobile{
+        display: none;
+    }
+}
+@media (min-width: 1501px){
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .head{
+        background-color:#343a40;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        height: 10vh;
+        width: 100%;
+    }
+    .navbarmobile{
+        display: none;
+    }
+    .btn-inicio{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        /* left: 10%; */
+        right: 5%;
+        top: 30%;
+        height: 4vh;
+        /* padding-bottom: 2vh; */
+        color: #343a40;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-registro{
+        --bs-btn-padding-y: 0;
+        --bs-border-radius: 0.200rem;
+        position: relative;
+        /* right: 10%; */
+        top: 30%;
+        height: 4vh;
+        /* padding-top: 0.5vh; */
+        color: #343a40;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: white;
+
+    }
+    .btn-registro:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .btn-inicio:hover{
+        background-color: #2a5595;
+        color: white;
+    }
+    .logoHeader{
+        position: relative;
+        left: 15%;
+        top: 25%;
+        height: 5vh;
+        width: auto;
+    }
+    .barraNavegacion{
+        position: relative;
+        left: 20%;
+        height: 50%;
+        top: 20%;
+        font-size: 1.6rem;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .nav-item:hover{
+        background-color: #73a3ddb2;
+        /* color: #5782b7; */
+        border-radius: 2vh;
+    }
+    .dropdown-item:hover{
+        background-color: #5782b7;
+        color: white;
+        
+    }
+    .contenedor{
+        margin: 0;
+        height: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        /* color: #5782b7; */
+        display: block;
+    }
+    .menumobile{
+        display: none;
+    }
+}

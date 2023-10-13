@@ -1,0 +1,113 @@
+<div class="head">
+    <div class="row contenedor">
+        <div class="col col-9" style="display: flex; height: 100%;">
+            <img class="logoHeader" src="assets/imgs/eclickTodoBlanco.png" alt="logoeClick">
+            <ul class="nav barraNavegacion menupc">
+                <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/home">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown-menu">
+                      <!-- <li><a class="dropdown-item" routerLink="/equipo">Equipo lider</a></li> -->
+                      <li><a class="dropdown-item" href="/edigital">eDigital</a></li>
+                      <li><a class="dropdown-item" routerLink="/clientes">Clientes</a></li>
+                      <!-- <li><a class="dropdown-item" href="/comunidad">Comunidad</a></li> -->
+                      <li><a class="dropdown-item" routerLink="/contacto">Contacto</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Financiamiento</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/confirming">Confirming</a></li>
+                      <li><a class="dropdown-item" routerLink="/factoring">Factoring</a></li>
+                      <li><a class="dropdown-item" href="#">Triangulación</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Soluciones</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/factelectronica">Facturación electronica</a></li>
+                      <li><a class="dropdown-item" routerLink="/radian">Radian</a></li>
+                      <!-- <li><a class="dropdown-item" routerLink="/factoring">Factoring</a></li>
+                      <li><a class="dropdown-item" href="#">Triangulación</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/radian">Radian</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/contacto">Contactenos</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- <div class="navbarmobile">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <h5 class="text-body-emphasis h4">Collapsed content</h5>
+                    <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div> -->
+        <div class="col col-3 menumobile">
+            <a (touchstart)="menu()" id="botonmenu" class="navbarmobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4vh" height="4vh" fill="none"
+                 stroke-width="2.2" viewBox="0 0 24 24" color="#ffffff"><path stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round" d="M3 5h18M3 12h18M3 19h18" (touchstart)="menu()"></path></svg>
+            </a>
+        </div>
+        <div class="col col-3 menupc">
+            <a routerLink="/login" routerLinkActive="active" target="_blank" class="btn btn-inicio">Iniciar sesion</a>
+            <a href="register" target="_blank" class="btn btn-registro">Registrarse</a>
+        </div>
+        <div style="background-color: #343a40; position: relative; height: 20vh;" *ngIf="visible">
+            <ul class="nav flex-column navmobile">
+                <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/home">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown-menu">
+                      <!-- <li><a class="dropdown-item" routerLink="/equipo">Equipo lider</a></li> -->
+                      <li><a class="dropdown-item" href="/edigital">eDigital</a></li>
+                      <li><a class="dropdown-item" routerLink="/clientes">Clientes</a></li>
+                      <!-- <li><a class="dropdown-item" href="/comunidad">Comunidad</a></li> -->
+                      <li><a class="dropdown-item" routerLink="/contacto">Contacto</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Financiamiento</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/confirming">Confirming</a></li>
+                      <li><a class="dropdown-item" routerLink="/factoring">Factoring</a></li>
+                      <li><a class="dropdown-item" href="#">Triangulación</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle txtBarra" data-bs-toggle="dropdown">Soluciones</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/factelectronica">Facturación electronica</a></li>
+                      <li><a class="dropdown-item" routerLink="/radian">Radian</a></li>
+                      <!-- <li><a class="dropdown-item" routerLink="/factoring">Factoring</a></li>
+                      <li><a class="dropdown-item" href="#">Triangulación</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/radian">Radian</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link txtBarra" routerLink="/contacto">Contactenos</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+  </div>

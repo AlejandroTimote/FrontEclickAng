@@ -1,0 +1,2298 @@
+/* Estilos para pantallas de escritorio y portátiles (rango de tamaños) */
+@media (max-width: 768px){
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .columna{
+        height: 1em !important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .masInfo{
+        display: none;
+    }
+    .verOpcion:hover > .masInfo{
+        display: block;
+    }
+    .fondopc{
+        background-image: url("/assets/imgs/paginicio.png");
+        height: 50vh;
+    }
+    .carousel-control-prev {
+        left: 6%;
+    }
+    .carousel-control-next {
+        right: 6%;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorAzul{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorGris{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorNegro{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorContacto{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .contenedorCarrrusel{
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+    }
+    .divBanner{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+    }
+    .divBanner1{
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+        left: 5%;
+        width: 90%;
+    }
+    .divBanner2{
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 5%;
+        width: 90%;
+    }
+    .txtBanner{
+        font-size: 1.4rem;
+        font-weight: 600;
+        justify-content: center;
+        color: white;
+    }
+    .txtBanner1{
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 700;
+        position: relative;
+        right: 25%;
+        top: 35%;
+    }
+    .contenedorTitulos{
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorAzulTitulos{
+        color: white;
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorImg{
+        height: 100%;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .titulos{
+        position: relative;
+        top: 35%;
+        /* right: 34%; */
+        width: 100%;
+    }
+    .titulosAzul{
+        color: white;
+        position: relative;
+        top: 25%;
+        /* right: 16%; */
+        width: 100%;
+    }
+    .inputs{
+        width: 35vh;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none; 
+    }
+    .btn-enviar{
+        position: relative;
+        /* left: 15%; */
+        top: 10vh;
+        height: 5vh;
+        width: 15vh;
+        color: #343a40;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-finan{
+        position: relative;
+        /* left: 10%; */
+        top: 5vh;
+        height: 5vh;
+        width: 12vh;
+        color: #57a2d9;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+        background-color: #57a2d9;
+    }
+    .imgsTitulo{
+        border-radius: 20vh;
+        position: relative;
+        top: 15%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .contenedorInfo{
+        width: 88%;
+        height: 75vh;
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        bottom: 10vh;
+        left: 12%;
+    }
+    .contenidoNegocio{
+        width: 100%;
+        height: 60vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divNegocio{
+        position: relative;
+        /* background-color: white;
+        z-index: 2; */
+        left: 5%;
+        width: 90%;
+        /* padding: 5vh; */
+    }
+    .contenidoFacturacion{
+        width: 100%;
+        height: 55vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divFacturacion{
+        position: relative;
+        left: 10%;
+        padding: 10vh;
+        z-index: 1;
+        background-color: #51a4dbf1;
+        color: white;
+        height: 80%;
+    }
+    .contenidoRadian{
+        width: 100%;
+        height: 60vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divRadian{
+        position: relative;
+        left: 5%;
+        width: 90%;
+        /* padding: 5vh; */
+    }
+    .contenidoClientes{
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divClientes{
+        position: relative;
+        background-color: #51a4db;
+        height: 80%;
+    }
+    .contenidoEquipo{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divEquipo{
+        position: relative;
+        top: 10vh;
+        background-color: white;
+        padding: 5vh;
+    }
+    .contenidoFondeo{
+        width: 90%;
+        height: 40vh;
+        position: relative;
+        left: 5%;
+        padding: 0;
+        margin: 0;
+    }
+    .divFondeo{
+        position: relative;
+        top: 20%;
+        background-color: #a4a4a5;
+        height: 30%;
+    }
+    .contenidoContacto{
+        width: 100%;
+        /* height: 100%; */
+        padding: 0;
+        margin: 0;
+    }
+    .divContacto{
+        position: relative;
+        background-color: #3167a7;
+        /* top: 40%; */
+        /* z-index: 2; */
+        /* padding: 5vh */
+    }
+    .formContacto{
+        position: relative;
+        left: 15%;
+        height: 90%;
+        display: none;
+        flex-direction: column;
+    }
+    .txtContacto{
+        position: relative;
+        left: 10%;
+        top: 10vh;
+        display: none;
+        justify-content: left;
+        color: white;
+    }
+    .carruselFondeo{
+        height: 80%;
+    }
+    .carruselEquipo{
+        height: 100%;
+        position: relative;
+        bottom: 15%;
+    }
+    .carruselPagador{
+        height: 80%;
+        position: relative;
+        bottom: 15%;
+    }
+    .fondoNosotros{
+        /* background-image: url('/assets/imgs/fondocubos.jpg'); */
+        width: 100%;
+        height: 100%;
+    }
+    /********/
+    .txtNegocio{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .txtNegocioInfo{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1rem;
+        width: 100%;
+        position: relative;
+        /* left: 3%; */
+        /* bottom: 10vh; */
+    }
+    .txtLista{
+        padding: 1vh;
+    }
+    .txtRadian{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1rem
+    }
+    .txtFrase{
+        position: relative;
+        top: 5vh;
+        font-size: 1.1rem;
+        /* width: 70%; */
+    }
+    .imgISO{
+        height: 15vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .imgeclick{
+        height: 3vh;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .infoFactElec{
+        position: relative;
+        top: 5vh;
+        height: 5vh;
+        width: 12vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .infoRadian{
+        position: relative;
+        right: 25%;
+        top: 35%;
+        height: 5vh;
+        width: 12vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .footer{
+        display: none;
+    }
+    .imgmobile{
+        display: none;
+    }
+    .formmobile{
+        display: flex;
+        position: relative;
+        /* left: 15%; */
+        height: 70%;
+        width: 100%;
+        top: 5%;
+        flex-direction: column;
+    }
+    .imgbanner1{
+        height: 50vh; width: 100%;
+    }
+    .imgbanner2{
+        height: 50vh; width: 100%;
+    }
+    .imgbanner3{
+        height: 50vh; width: 100%;
+    }
+    .carruselfondeomobile{
+        display: block;
+    }
+    .carruselfondeopc{
+        display: none;
+    }
+    .logobancolombia{
+        height:10vh;
+        position: relative;
+        bottom: 5%;
+        /* padding-right: 12vh; */
+    }
+    .logocorredores{
+        height:10vh;
+    }
+    .logocolte{
+        height: 7vh;
+        position: relative;
+        top: 2vh;
+        /* padding-right: 12vh; */
+    }
+    .logofinamco{
+        height: 7vh;
+        position: relative;
+        top: 3vh;
+        /* padding-right: 12vh; */
+    }
+    .logoavvillas{
+        height: 5vh;
+        position: relative;
+        top: 4vh;
+    }
+    .contenidoNegocioInfo{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        margin-top: 10%; 
+        background-color: #3166a7cb;
+        width: 90%;
+        height: 60%;
+        padding: 0;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 70vh;
+    }
+    .divNegocioInfo{
+        position: absolute;
+        left: 5%;
+        display: block;
+        z-index: 1;
+        width: 90%;
+    }
+    .indicador{
+        height: 6px;
+        width: 40px;
+    }
+}
+/* Estilos para pantallas de escritorio y portátiles (rango de tamaños) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .columna{
+        height: 1em !important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .masInfo{
+        display: none;
+    }
+    .verOpcion:hover > .masInfo{
+        display: block;
+    }
+    .fondopc{
+        background-image: url("/assets/imgs/paginicio.png");
+        height: 50vh;
+    }
+    .carousel-control-prev {
+        left: 6%;
+    }
+    .carousel-control-next {
+        right: 6%;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorAzul{
+        background-color: #3167a7;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorGris{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorNegro{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorContacto{
+        background-color: #3167a7;
+        width: 100%;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .contenedorCarrrusel{
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+    }
+    .divBanner1{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+    .divBanner2{
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+    }
+    .txtBanner{
+        font-size: 3rem;
+        font-weight: 700;
+        justify-content: center;
+        color: white;
+    }
+    .txtBanner1{
+        color: black;
+        font-size: 4rem;
+        font-weight: 700;
+        position: relative;
+        right: 25%;
+        top: 35%;
+    }
+    .contenedorTitulos{
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorAzulTitulos{
+        color: white;
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorImg{
+        height: 100%;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .titulos{
+        position: relative;
+        /* display: flex; */
+        top: 25%;
+        font-size: 3rem;
+        /* left: 18%; */
+        width: 100%;
+        /* height: 100%; */
+    }
+    .titulosAzul{
+        color: white;
+        position: relative;
+        /* bottom: 50%; */
+        /* left: 18%; */
+        width: 100%;
+        top: 25%;
+        font-size: 3.5rem;
+    }
+    .inputs{
+        width: 60vh;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none; 
+    }
+    .btn-enviar{
+        position: relative;
+        /* left: 45%; */
+        top: 10vh;
+        height: 5vh;
+        width: 20vh;
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-finan{
+        position: relative;
+        /* left: 10%; */
+        top: 5vh;
+        height: 8vh;
+        width: 20vh;
+        color: #57a2d9;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        background-color: #57a2d9;
+    }
+    .imgsTitulo{
+        border-radius: 20vh;
+        position: relative;
+        top: 15%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .contenedorInfo{
+        width: 88%;
+        height: 75vh;
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        bottom: 10vh;
+        left: 12%;
+    }
+    .contenidoNegocio{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divNegocio{
+        position: relative;
+        background-color: white;
+        left: 10%;
+        /* z-index: 2; */
+        /* padding: 5vh; */
+    }
+    .contenidoFacturacion{
+        width: 100%;
+        height: 55vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divFacturacion{
+        position: relative;
+        left: 10%;
+        padding: 10vh;
+        z-index: 1;
+        background-color: #51a4dbf1;
+        color: white;
+        height: 80%;
+    }
+    .contenidoRadian{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+    }
+    .divRadian{
+        position: relative;
+        left: 10%;
+        background-color: white;
+    }
+    .contenidoClientes{
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divClientes{
+        position: relative;
+        background-color: #51a4db;
+        height: 80%;
+    }
+    .contenidoEquipo{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divEquipo{
+        position: relative;
+        top: 10vh;
+        background-color: white;
+        padding: 5vh;
+    }
+    .contenidoFondeo{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .divFondeo{
+        position: relative;
+        top: 30%;
+        background-color: #a4a4a5;
+        height: 40%;
+    }
+    .contenidoContacto{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .divContacto{
+        position: absolute;
+        background-color: #3167a7;
+        z-index: 2;
+        padding: 5vh
+    }
+    .formContacto{
+        position: relative;
+        left: 15%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtContacto{
+        position: relative;
+        left: 10%;
+        top: 5vh;
+        display: flex;
+        font-size: 2rem;
+        justify-content: left;
+        color: white;
+        height: 40%;
+    }
+    .carruselFondeo{
+        height: 70%;
+    }
+    .carruselEquipo{
+        height: 100%;
+        position: relative;
+        bottom: 15%;
+    }
+    .carruselPagador{
+        height: 80%;
+        position: relative;
+        bottom: 15%;
+    }
+    .fondoNosotros{
+        /* background-image: url('/assets/imgs/fondocubos.jpg'); */
+        width: 100%;
+        height: 100%;
+    }
+    .txtNegocio{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+    .txtNegocioInfo{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.2rem;
+        width: 90%;
+        position: relative;
+        left: 3%;
+        bottom: 10vh;
+    }
+    .txtLista{
+        padding: 3vh;
+    }
+    .txtRadian{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1.2rem
+    }
+    .txtFrase{
+        position: relative;
+        top: 10vh;
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    .imgISO{
+        height: 50vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .infoFactElec{
+        position: relative;
+        top: 5vh;
+        height: 8vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.3rem;
+        border-radius: 5px;
+    }
+    .infoRadian{
+        position: relative;
+        right: 25%;
+        top: 35%;
+        height: 8vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .imgISO{
+        height: 40vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .imgeclick{
+        height: 10vh;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .formmobile{
+        display: none;
+    }
+    .imgbanner1{
+        height: 150vh; width: 100%;
+    }
+    .imgbanner2{
+        height: 130vh; width: 100%;
+    }
+    .imgbanner3{
+        height: 120vh; width: 100%;
+    }
+    .logobancolombia{
+        height:12vh;
+        padding-right: 12vh;
+    }
+    .logocorredores{
+        height:12vh;
+    }
+    .logocolte{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logofinamco{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logoavvillas{
+        height: 8vh;
+    }
+    .carruselfondeomobile{
+        display: none;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 100vh;
+    }
+    .contenidoNegocioInfo{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        margin-top: 10%; 
+        background-color: #3166a7cb;
+        width: 90%;
+        height: 85%;
+        padding: 0;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 120vh;
+    }
+    .divNegocioInfo{
+        position: absolute;
+        left: 5%;
+        display: block;
+        z-index: 1;
+        width: 90%;
+    }
+    .indicador{
+        height: 5px;
+        width: 50px;
+    }
+}
+/* Estilos para pantallas grandes de escritorio con un ancho mínimo de 1440px */
+@media (min-width: 1025px) and (max-width: 1365px)  {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .columna{
+        height: 1em !important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .masInfo{
+        display: none;
+    }
+    .verOpcion:hover > .masInfo{
+        display: block;
+    }
+    .fondopc{
+        background-image: url("/assets/imgs/paginicio.png");
+        height: 50vh;
+    }
+    .carousel-control-prev {
+        left: 6%;
+    }
+    .carousel-control-next {
+        right: 6%;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorAzul{
+        background-color: #3167a7;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorGris{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorNegro{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorContacto{
+        background-color: #3167a7;
+        width: 100%;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .contenedorCarrrusel{
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+    }
+    .divBanner1{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+    .divBanner2{
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+    }
+    .txtBanner{
+        font-size: 4rem;
+        font-weight: 700;
+        justify-content: center;
+        color: white;
+    }
+    .txtBanner1{
+        color: black;
+        font-size: 4rem;
+        font-weight: 700;
+        position: relative;
+        right: 25%;
+        top: 35%;
+    }
+    .contenedorTitulos{
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorAzulTitulos{
+        color: white;
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorImg{
+        height: 100%;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .titulos{
+        position: relative;
+        /* display: flex; */
+        top: 25%;
+        font-size: 4rem;
+        /* left: 18%; */
+        width: 100%;
+        /* height: 100%; */
+    }
+    .titulosAzul{
+        color: white;
+        position: relative;
+        /* bottom: 50%; */
+        /* left: 18%; */
+        width: 100%;
+        top: 25%;
+        font-size: 3.5rem;
+    }
+    .inputs{
+        width: 60vh;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none; 
+    }
+    .btn-enviar{
+        position: relative;
+        /* left: 45%; */
+        top: 10vh;
+        height: 5vh;
+        width: 20vh;
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-finan{
+        position: relative;
+        /* left: 10%; */
+        top: 5vh;
+        height: 6vh;
+        width: 20vh;
+        color: #57a2d9;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        background-color: #57a2d9;
+    }
+    .imgsTitulo{
+        border-radius: 20vh;
+        position: relative;
+        top: 15%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .contenedorInfo{
+        width: 88%;
+        height: 75vh;
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        bottom: 10vh;
+        left: 12%;
+    }
+    .contenidoNegocio{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divNegocio{
+        position: relative;
+        background-color: white;
+        left: 10%;
+        /* z-index: 2; */
+        /* padding: 5vh; */
+    }
+    .contenidoFacturacion{
+        width: 100%;
+        height: 55vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divFacturacion{
+        position: relative;
+        left: 10%;
+        padding: 10vh;
+        z-index: 1;
+        background-color: #51a4dbf1;
+        color: white;
+        height: 80%;
+    }
+    .contenidoRadian{
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+    }
+    .divRadian{
+        position: relative;
+        left: 10%;
+        background-color: white;
+    }
+    .contenidoClientes{
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divClientes{
+        position: relative;
+        background-color: #51a4db;
+        height: 80%;
+    }
+    .contenidoEquipo{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divEquipo{
+        position: relative;
+        top: 10vh;
+        background-color: white;
+        padding: 5vh;
+    }
+    .contenidoFondeo{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .divFondeo{
+        position: relative;
+        top: 30%;
+        background-color: #a4a4a5;
+        height: 40%;
+    }
+    .contenidoContacto{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .divContacto{
+        position: absolute;
+        background-color: #3167a7;
+        z-index: 2;
+        padding: 5vh
+    }
+    .formContacto{
+        position: relative;
+        left: 15%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtContacto{
+        position: relative;
+        left: 10%;
+        top: 5vh;
+        display: flex;
+        font-size: 2rem;
+        justify-content: left;
+        color: white;
+        height: 40%;
+    }
+    .carruselFondeo{
+        height: 70%;
+    }
+    .carruselEquipo{
+        height: 100%;
+        position: relative;
+        bottom: 15%;
+    }
+    .carruselPagador{
+        height: 80%;
+        position: relative;
+        bottom: 15%;
+    }
+    .fondoNosotros{
+        /* background-image: url('/assets/imgs/fondocubos.jpg'); */
+        width: 100%;
+        height: 100%;
+    }
+    .txtNegocio{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.3rem;
+    }
+    .txtNegocioInfo{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.5rem;
+        width: 90%;
+        position: relative;
+        left: 3%;
+        bottom: 10vh;
+    }
+    .txtLista{
+        padding: 3vh;
+    }
+    .txtRadian{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1.3rem
+    }
+    .txtFrase{
+        position: relative;
+        top: 10vh;
+        width: 70%;
+        font-size: 1.6rem;
+    }
+    .imgISO{
+        height: 50vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .infoFactElec{
+        position: relative;
+        top: 5vh;
+        height: 6vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.3rem;
+        border-radius: 5px;
+    }
+    .infoRadian{
+        position: relative;
+        right: 25%;
+        top: 35%;
+        height: 6vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .imgISO{
+        height: 40vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .imgeclick{
+        height: 10vh;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .formmobile{
+        display: none;
+    }
+    .imgbanner1{
+        height: 150vh; width: 100%;
+    }
+    .imgbanner2{
+        height: 130vh; width: 100%;
+    }
+    .imgbanner3{
+        height: 120vh; width: 100%;
+    }
+    .logobancolombia{
+        height:12vh;
+        padding-right: 12vh;
+    }
+    .logocorredores{
+        height:12vh;
+    }
+    .logocolte{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logofinamco{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logoavvillas{
+        height: 8vh;
+    }
+    .carruselfondeomobile{
+        display: none;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 100vh;
+    }
+    .contenidoNegocioInfo{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        margin-top: 10%; 
+        background-color: #3166a7cb;
+        width: 90%;
+        height: 85%;
+        padding: 0;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 120vh;
+    }
+    .divNegocioInfo{
+        position: absolute;
+        left: 5%;
+        display: block;
+        z-index: 1;
+        width: 90%;
+    }
+    .indicador{
+        height: 10px;
+        width: 50px;
+    }
+}
+@media (min-width: 1365px) and (max-width: 1500px)  {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .columna{
+        height: 1em !important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .masInfo{
+        display: none;
+    }
+    .verOpcion:hover > .masInfo{
+        display: block;
+    }
+    .fondopc{
+        background-image: url("/assets/imgs/paginicio.png");
+        height: 50vh;
+    }
+    .carousel-control-prev {
+        left: 6%;
+    }
+    .carousel-control-next {
+        right: 6%;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorAzul{
+        background-color: #3167a7;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorGris{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorNegro{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorContacto{
+        background-color: #3167a7;
+        width: 100%;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .contenedorCarrrusel{
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+    }
+    .divBanner1{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+    .divBanner2{
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+    }
+    .txtBanner{
+        font-size: 4rem;
+        font-weight: 700;
+        justify-content: center;
+        color: white;
+    }
+    .txtBanner1{
+        color: black;
+        font-size: 4rem;
+        font-weight: 700;
+        position: relative;
+        right: 25%;
+        top: 35%;
+    }
+    .contenedorTitulos{
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorAzulTitulos{
+        color: white;
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorImg{
+        height: 100%;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .titulos{
+        position: relative;
+        /* display: flex; */
+        top: 25%;
+        font-size: 4rem;
+        /* left: 18%; */
+        width: 100%;
+        /* height: 100%; */
+    }
+    .titulosAzul{
+        color: white;
+        position: relative;
+        /* bottom: 50%; */
+        /* left: 18%; */
+        width: 100%;
+        top: 25%;
+        font-size: 3.5rem;
+    }
+    .inputs{
+        width: 60vh;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none; 
+    }
+    .btn-enviar{
+        position: relative;
+        /* left: 45%; */
+        top: 10vh;
+        height: 5vh;
+        width: 20vh;
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-finan{
+        position: relative;
+        /* left: 10%; */
+        top: 5vh;
+        height: 6vh;
+        width: 20vh;
+        color: #57a2d9;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        background-color: #57a2d9;
+    }
+    .imgsTitulo{
+        border-radius: 20vh;
+        position: relative;
+        top: 15%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .contenedorInfo{
+        width: 88%;
+        height: 75vh;
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        bottom: 10vh;
+        left: 12%;
+    }
+    .contenidoNegocio{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divNegocio{
+        position: relative;
+        background-color: white;
+        left: 15%;
+        /* z-index: 2; */
+        /* padding: 5vh; */
+    }
+    .contenidoFacturacion{
+        width: 100%;
+        height: 55vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divFacturacion{
+        position: relative;
+        left: 10%;
+        padding: 10vh;
+        z-index: 1;
+        background-color: #51a4dbf1;
+        color: white;
+        height: 80%;
+    }
+    .contenidoRadian{
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+    }
+    .divRadian{
+        position: relative;
+        left: 10%;
+        background-color: white;
+    }
+    .contenidoClientes{
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divClientes{
+        position: relative;
+        background-color: #51a4db;
+        height: 80%;
+    }
+    .contenidoEquipo{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divEquipo{
+        position: relative;
+        top: 10vh;
+        background-color: white;
+        padding: 5vh;
+    }
+    .contenidoFondeo{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .divFondeo{
+        position: relative;
+        top: 30%;
+        background-color: #a4a4a5;
+        height: 40%;
+    }
+    .contenidoContacto{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .divContacto{
+        position: absolute;
+        background-color: #3167a7;
+        z-index: 2;
+        padding: 5vh
+    }
+    .formContacto{
+        position: relative;
+        left: 15%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtContacto{
+        position: relative;
+        left: 10%;
+        top: 5vh;
+        display: flex;
+        font-size: 2rem;
+        justify-content: left;
+        color: white;
+        height: 40%;
+    }
+    .carruselFondeo{
+        height: 70%;
+    }
+    .carruselEquipo{
+        height: 100%;
+        position: relative;
+        bottom: 15%;
+    }
+    .carruselPagador{
+        height: 80%;
+        position: relative;
+        bottom: 15%;
+    }
+    .fondoNosotros{
+        /* background-image: url('/assets/imgs/fondocubos.jpg'); */
+        width: 100%;
+        height: 100%;
+    }
+    .txtNegocio{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+    .txtNegocioInfo{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.9rem;
+        width: 90%;
+        position: relative;
+        left: 3%;
+        bottom: 10vh;
+    }
+    .txtLista{
+        padding: 3vh;
+    }
+    .txtRadian{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1.7rem
+    }
+    .txtFrase{
+        position: relative;
+        top: 10vh;
+        width: 70%;
+        font-size: 1.6rem;
+    }
+    .imgISO{
+        height: 50vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .infoFactElec{
+        position: relative;
+        top: 5vh;
+        height: 6vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.3rem;
+        border-radius: 5px;
+    }
+    .infoRadian{
+        position: relative;
+        right: 25%;
+        top: 35%;
+        height: 6vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .imgISO{
+        height: 40vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .imgeclick{
+        height: 10vh;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .formmobile{
+        display: none;
+    }
+    .imgbanner1{
+        height: 150vh; width: 100%;
+    }
+    .imgbanner2{
+        height: 130vh; width: 100%;
+    }
+    .imgbanner3{
+        height: 120vh; width: 100%;
+    }
+    .logobancolombia{
+        height:12vh;
+        padding-right: 12vh;
+    }
+    .logocorredores{
+        height:12vh;
+    }
+    .logocolte{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logofinamco{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logoavvillas{
+        height: 8vh;
+    }
+    .carruselfondeomobile{
+        display: none;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 100vh;
+    }
+    .contenidoNegocioInfo{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        margin-top: 10%; 
+        background-color: #3166a7cb;
+        width: 90%;
+        height: 85%;
+        padding: 0;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 120vh;
+    }
+    .divNegocioInfo{
+        position: absolute;
+        left: 5%;
+        display: block;
+        z-index: 1;
+        width: 90%;
+    }
+    .indicador{
+        height: 10px;
+        width: 50px;
+    }
+}
+@media (min-width: 1501px) {
+    .col{
+        margin: 0%;
+    }
+    .col-auto{
+        border: 1px;
+        margin: 0%;
+    }
+    .columna{
+        height: 1em !important;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .masInfo{
+        display: none;
+    }
+    .verOpcion:hover > .masInfo{
+        display: block;
+    }
+    .fondopc{
+        background-image: url("/assets/imgs/paginicio.png");
+        height: 50vh;
+    }
+    .carousel-control-prev {
+        left: 6%;
+    }
+    .carousel-control-next {
+        right: 6%;
+    }
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorAzul{
+        background-color: #3167a7;
+        width: 100%;
+        height: 90vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorGris{
+        background-color: #a4a4a5;
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        top: 30%;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorNegro{
+        background-color: #343a40;
+        width: 100%;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .contenedorContacto{
+        background-color: #3167a7;
+        width: 100%;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+    }
+    .txtBarra{
+        color: white;
+        cursor: pointer;
+    }
+    .contenedorCarrrusel{
+        margin: 0;
+        padding: 0;
+        height: 90vh;
+    }
+    .divBanner1{
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+    }
+    .divBanner2{
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+    }
+    .txtBanner{
+        font-size: 4rem;
+        font-weight: 700;
+        justify-content: center;
+        color: white;
+    }
+    .txtBanner1{
+        color: black;
+        font-size: 4rem;
+        font-weight: 700;
+        position: relative;
+        right: 25%;
+        top: 35%;
+    }
+    .contenedorTitulos{
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorAzulTitulos{
+        color: white;
+        text-align: left;
+        margin: 0;
+        height: 25vh;
+        width: 90%;
+        padding: 0;
+        position: relative;
+        left: 10%;
+        bottom: 10vh;
+    }
+    .contenedorImg{
+        height: 100%;
+        width: 95%;
+        margin-left: 5%;
+    }
+    .titulos{
+        position: relative;
+        /* display: flex; */
+        top: 25%;
+        font-size: 4rem;
+        /* left: 18%; */
+        width: 100%;
+        /* height: 100%; */
+    }
+    .titulosAzul{
+        color: white;
+        position: relative;
+        /* bottom: 50%; */
+        /* left: 18%; */
+        width: 100%;
+        top: 25%;
+        font-size: 3.5rem;
+    }
+    .inputs{
+        width: 60vh;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: none; 
+    }
+    .btn-enviar{
+        position: relative;
+        /* left: 45%; */
+        top: 10vh;
+        height: 5vh;
+        width: 20vh;
+        color: #3167a7;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: white;
+    }
+    .btn-finan{
+        position: relative;
+        /* left: 10%; */
+        top: 5vh;
+        height: 5vh;
+        width: 20vh;
+        color: #57a2d9;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        background-color: #57a2d9;
+    }
+    .imgsTitulo{
+        border-radius: 20vh;
+        position: relative;
+        top: 15%;
+        height: 20vh;
+        width: 20vh;
+    }
+    .contenedorInfo{
+        width: 88%;
+        height: 75vh;
+        padding: 0;
+        margin: 0;
+        position: relative; 
+        bottom: 10vh;
+        left: 12%;
+    }
+    .contenidoNegocio{
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+        /* left: 12%; */
+    }
+    .divNegocio{
+        position: relative;
+        background-color: white;
+        left: 15%;
+        /* z-index: 2; */
+        /* padding: 5vh; */
+    }
+    .contenidoFacturacion{
+        width: 100%;
+        height: 55vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divFacturacion{
+        position: relative;
+        left: 10%;
+        padding: 10vh;
+        z-index: 1;
+        background-color: #51a4dbf1;
+        color: white;
+        height: 80%;
+    }
+    .contenidoRadian{
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        /* bottom: 10vh; */
+    }
+    .divRadian{
+        position: relative;
+        left: 10%;
+        background-color: white;
+    }
+    .contenidoClientes{
+        width: 100%;
+        height: 45vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divClientes{
+        position: relative;
+        background-color: #51a4db;
+        height: 80%;
+    }
+    .contenidoEquipo{
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 10vh;
+    }
+    .divEquipo{
+        position: relative;
+        top: 10vh;
+        background-color: white;
+        padding: 5vh;
+    }
+    .contenidoFondeo{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .divFondeo{
+        position: relative;
+        top: 30%;
+        background-color: #a4a4a5;
+        height: 40%;
+    }
+    .contenidoContacto{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .divContacto{
+        position: absolute;
+        background-color: #3167a7;
+        z-index: 2;
+        padding: 5vh
+    }
+    .formContacto{
+        position: relative;
+        left: 15%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .txtContacto{
+        position: relative;
+        left: 10%;
+        top: 5%;
+        top: 5vh;
+        display: flex;
+        font-size: 2.5rem;
+        justify-content: left;
+        color: white;
+        height: 40%;
+    }
+    .carruselFondeo{
+        height: 70%;
+    }
+    .carruselEquipo{
+        height: 100%;
+        position: relative;
+        bottom: 15%;
+    }
+    .carruselPagador{
+        height: 80%;
+        position: relative;
+        bottom: 15%;
+    }
+    .fondoNosotros{
+        /* background-image: url('/assets/imgs/fondocubos.jpg'); */
+        width: 100%;
+        height: 100%;
+    }
+    .txtNegocio{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+    .txtNegocioInfo{
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1.9rem;
+        width: 90%;
+        position: relative;
+        left: 3%;
+        bottom: 10vh;
+    }
+    .txtLista{
+        padding: 3vh;
+    }
+    .txtRadian{
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1.7rem
+    }
+    .txtFrase{
+        position: relative;
+        top: 10vh;
+        width: 70%;
+        font-size: 1.6rem;
+    }
+    .imgISO{
+        height: 50vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .infoFactElec{
+        position: relative;
+        top: 5vh;
+        height: 5vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.3rem;
+        border-radius: 5px;
+    }
+    .infoRadian{
+        position: relative;
+        right: 25%;
+        top: 35%;
+        height: 5vh;
+        width: 20vh;
+        background-color: #57a2d9; 
+        color: white;
+        border: 3px white;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    .imgISO{
+        height: 40vh;
+        position: relative;
+        left: 20%;
+        bottom: 5%;
+    }
+    .imgeclick{
+        height: 10vh;
+        position: relative;
+        top: 20%;
+        left: 10%;
+    }
+    .formmobile{
+        display: none;
+    }
+    .imgbanner1{
+        height: 150vh; width: 100%;
+    }
+    .imgbanner2{
+        height: 130vh; width: 100%;
+    }
+    .imgbanner3{
+        height: 120vh; width: 100%;
+    }
+    .logobancolombia{
+        height:12vh;
+        padding-right: 12vh;
+    }
+    .logocorredores{
+        height:12vh;
+    }
+    .logocolte{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logofinamco{
+        height: 10vh;
+        padding-right: 12vh;
+    }
+    .logoavvillas{
+        height: 8vh;
+    }
+    .carruselfondeomobile{
+        display: none;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 100vh;
+    }
+    .contenidoNegocioInfo{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        margin-top: 10%; 
+        background-color: #3166a7cb;
+        width: 90%;
+        height: 85%;
+        padding: 0;
+    }
+    .contenedorNegocioInfo{
+        margin: 0;
+        height: 120vh;
+    }
+    .divNegocioInfo{
+        position: absolute;
+        left: 5%;
+        display: block;
+        z-index: 1;
+        width: 90%;
+    }
+    .indicador{
+        height: 10px;
+        width: 50px;
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedorNav">
+            <h3 class="txtnav">Registro de usuario</h3>
+        </div>
+        <div class="row contenedorCard">
+            <div class="col">
+                <div class="card cardLeft">
+                    <div class="card-header headerLeft">
+                        <h6 class="card-title titleLeft">Registro de proveedores para Facturación Electrónica</h6>
+                    </div>
+                    <div class="card-body bodyLeft">
+                      <p class="card-text txtLeft">
+                        Este proceso permite registrar facturas electrónicas y consultar el estado de las mismas.
+
+                        Si tiene inconvenientes o dudas por favor contáctenos al correo
+                      </p>
+                      <a href="atencionproveedores@tigo.com.co" class="card-link">atencionproveedores@tigo.com.co</a>
+                    </div>
+                    <div class="card-footer">
+                        <button (click)="tipoRegistro = 0; cambiaTipoRegistro(); getModulosActivosXCodModulo('FE')" class="btn btn-registrar" class="btn btn-registrar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cardRight">
+                    <div class="card-header headerRight">
+                        <h6 class="card-title">Registro de proveedores para Certificados Tributarios</h6>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Consulta y descarga de certificados tributarios
+
+                        Si tiene inconvenientes o dudas por favor contáctenos al correo
+                      </p>
+                      <a href="#" class="card-link">ConsultasInternasImpuestos@tigo.com.co</a>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Button trigger modal -->
+                        <button (click)="tipoRegistro = 1; cambiaTipoRegistro(); getModulosActivosXCodModulo('IM')" class="btn btn-registrar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cardLeft">
+                    <div class="card-header headerLeft">
+                        <h6 class="card-title titleLeft">Registro de contacto</h6>
+                    </div>
+                    <div class="card-body bodyLeft">
+                      <p class="card-text txtLeft">
+                        Si requiere registrarse en la plataforma eClick debe llenar un formulario en la
+                        pagina de inicio dando click en el boton de "Registrar".
+
+                        Si tiene inconvenientes o dudas por favor contáctenos al correo
+                      </p>
+                      <a href="#" class="card-link">soporte.eclick@cbmfactoring.com</a>
+                    </div>
+                    <div class="card-footer">
+                        <button href="http://localhost:4200/home" class="btn btn-registrar">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 140vh; right: 20%;">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">{{tituloModal}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="registro">
+                            <form [formGroup]="formRegister" (submit)="onSubmit()" class="formulario">
+                                <div *ngIf="continuaRegistro == 0" class="divFormulario">
+                                    <div class="row datosPosterior">
+                                        <h4 class="tituloPosterior">Datos proveedor</h4>
+                                        <div class="col col-6">
+                                            <!-- <div class="form-floating mb-3" style="height: 100%; width: 100%;">
+                                                <input class="inputNit form-control" id="floatingInput" formControlName="NitProv" type="text" placeholder="Nit Proveedor" (keyup)="muestraLabel()">
+                                                <label for="floatingInput">Email address</label>
+                                            </div> -->
+                                            <div class="form-floating mb-3 divInputNit" style="position: relative; top: 10%;">
+                                                <input type="text" formControlName="NitProv" class="form-control inputNit" id="floatingInput" placeholder="name@example.com">
+                                                <label for="floatingInput">Nit Proveedor</label>
+                                            </div>
+                                            <a (click)="getProvXNit(formRegister.value.NitProv)" class="btn btn-inicio">Buscar</a>
+                                            <select style="position: relative; top: 5%; left: 20%; width: 40vh;" class="form-select" id="inputGroupSelect01" formControlName="CodPagador">
+                                                <option selected>Pagador</option>
+                                                <option *ngFor="let m of modulActivo" value="{{m.codPagador}}">{{m.nomPagador}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-6">
+                                            <input class="inputForm" type="text" [disabled]="true" [value]="prov.nombre" style="position: relative; left: 5%; top: 10%; width: 50vh; height: 9vh;" placeholder="Razón social">
+                                        </div>
+                                    </div>
+                                    <div class="border-top mt-3 mb-3 lineaHorizontal"></div>
+                                    <div class="row datosInferior">
+                                        <h4 class="tituloInferior">Datos de usuario</h4>
+                                        <div class="row" style="width: 100%;">
+                                            <div class="col col-5 formularioInferior">
+                                                <div class="formLeft">
+                                                    <div class="input-group" style="width: 30vh;">
+                                                        <select class="form-select" id="inputGroupSelect01" formControlName="TipoDoc">
+                                                            <option selected>Tipo documento</option>
+                                                            <option *ngFor="let td of tipoDoc" value="{{td.codTipoDoc}}">{{td.tipoDoc}}</option>
+                                                        </select>
+                                                    </div>
+                                                    <select style="position: relative; top: 5%; width: 30vh;" class="form-select" aria-label="Default select example" formControlName="Pais">
+                                                        <option selected>País</option>
+                                                        <option *ngFor="let p of pais" value="{{p.codigo}}">{{p.pais}}</option>
+                                                    </select>
+                                                    <select style="position: relative; top: 10%; width: 30vh;" class="form-select" id="inputGroupSelect01" formControlName="CodDepto" (change)="getCiudadXCodDepto(formRegister.value.CodDepto)">
+                                                        <option selected>Departamento</option>
+                                                        <option *ngFor="let d of departamento" value="{{d.codDepto}}">{{d.departamento}}</option>
+                                                    </select>
+                                                    <select style="position: relative; top: 15%; width: 30vh;" class="form-select" id="inputGroupSelect01" formControlName="CodigoDane">
+                                                        <option selected>Ciudad</option>
+                                                        <option *ngFor="let c of ciudad" value="{{c.codDane}}">{{c.ciudad}}</option>
+                                                    </select>
+
+                                                    <!-- <input class="inputForm" type="text" formControlName="Nombre" style="position: relative; top: 5%;" placeholder="Nombres y apellidos">
+
+                                                    <input class="inputForm" type="text" formControlName="Telefono" style="position: relative; top: 10%;" placeholder="Telefono fijo">
+
+                                                    <input class="inputForm" type="text" formControlName="Direccion" style="position: relative; top: 15%;" placeholder="Direccion"> -->
+
+                                                </div>
+                                            </div>
+                                            <div class="col col-4 formularioInferior">
+                                                <div class="formRight">
+                                                    <div class="form-floating mb-3 marginFloat">
+                                                        <input type="text" formControlName="NumDoc" class="form-control inputForm" id="floatingInput" placeholder="Numero documento">
+                                                        <label for="floatingInput">Numero documento</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3 marginFloat" style="position: relative; top: 5%;" >
+                                                        <input type="text" formControlName="Nombre" class="form-control inputForm" id="floatingInput" placeholder="Nombres y apellidos">
+                                                        <label for="floatingInput">Nombres y apellidos</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3 marginFloat" style="position: relative; top: 10%;" >
+                                                        <input type="text" formControlName="Telefono" class="form-control inputForm" id="floatingInput" placeholder="Telefono fijo">
+                                                        <label for="floatingInput">Teléfono</label>
+                                                    </div>
+                                                    <!-- <input class="inputForm" type="text" formControlName="NumDoc" style="position: relative;" placeholder="Numero documento"> -->
+                                                </div>
+                                            </div>
+                                            <div class="col col-3 formularioInferior">
+                                                <div class="formRight">
+                                                    <div class="form-floating mb-3 marginFloat">
+                                                        <input type="text" formControlName="Celular" class="form-control inputForm" id="floatingInput" placeholder="Celular">
+                                                        <label for="floatingInput">Celular</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3 marginFloat" style="position: relative; top: 5%;">
+                                                        <input type="text" formControlName="Cargo" class="form-control inputForm" id="floatingInput" placeholder="Cargo">
+                                                        <label for="floatingInput">Cargo</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3 marginFloat" style="position: relative; top: 10%;">
+                                                        <input type="text" formControlName="Direccion" class="form-control inputForm" id="floatingInput" placeholder="Direccion">
+                                                        <label for="floatingInput">Direccion</label>
+                                                    </div>
+                                                    <!-- <input class="inputForm" type="text" formControlName="Celular" style="position: relative;" placeholder="Celular">
+                                                    <input class="inputForm" type="text" formControlName="Cargo" style="position: relative; top: 5%;" placeholder="Cargo"> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                                    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </symbol>
+                                </svg>
+                                <div *ngIf="continuaRegistro == 1" class="formulario">
+                                    <div class="row datosPosterior">
+                                        <h4 class="tituloPosterior">Confirmar correo</h4>
+                                        <div class="col col-6">
+                                            <div class="form-floating mb-3 marginFloat" style="position: relative; left: 15%; top: 45%; width: 40vh;">
+                                                <input type="text" style="width: 50vh" formControlName="Email" class="form-control inputForm" id="floatingInput" placeholder="Correo electronico">
+                                                <label for="floatingInput">Correo electronico</label>
+                                            </div>
+                                            <!-- <input class="inputForm" formControlName="Email" type="text" style="position: relative; left: 15%; top: 45%;" placeholder="Correo electronico"> -->
+                                            <div class="form-floating mb-3 marginFloat" style="position: relative;left: 15%;top: 65%;">
+                                                <input type="text" formControlName="Codigo" class="form-control inputCodigo" id="floatingInput" placeholder="Codigo">
+                                                <label for="floatingInput">Codigo</label>
+                                            </div>
+                                            <!-- <input class="inputCodigo" formControlName="Codigo" type="text" placeholder="Codigo"> -->
+                                            <a (click)="generaCodigo()" class="btn btn-codigo">Generar codigo</a>
+                                        </div>
+                                        <div class="col col-6">
+                                            <div class="form-floating mb-3 marginFloat" style="position: relative; left: 5%; top: 45%; width: 40vh;">
+                                                <input type="text" style="width: 50vh" formControlName="ConfirmaEmail" class="form-control inputForm" id="floatingInput" placeholder="Codigo">
+                                                <label for="floatingInput">Confirmar correo</label>
+                                            </div>
+                                            <!-- <input class="inputForm" formControlName="ConfirmaEmail" type="text" style="position: relative; left: 5%; top: 45%;" placeholder="Confirmar correo"> -->
+                                            <p class="text-justify" style="position: relative; left: 5%; top: 65%; display: flex; width: 80%;">*Despues de generar el codigo, debe revisar el correo y digitarlo en el campo correspondiente</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <swal>
+                        </swal>
+                        <button (click)="continuaRegistro = 0"  *ngIf="continuaRegistro == 1" class="btn btn-volver">Volver</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="background-color: #a4a4a5; border: #a4a4a5;">Cancelar</button>
+                        <button (click)="mostrarError()" *ngIf="continuaRegistro == 0" class="btn btn-continuar">Continuar</button>
+                        <button (click)="onSubmit()" *ngIf="continuaRegistro == 1" type="submit" class="btn btn-registro">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

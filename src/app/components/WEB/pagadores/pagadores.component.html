@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">CodSociedad</th>
+        <th scope="col">CodDane</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">NumDoc</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">tipoDoc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of pagador">
+        <th scope="row">{{p.codEmpresa}}</th>
+        <td>{{p.codSociedad}}</td>
+        <td>{{p.codigoDane}}</td>
+        <td>{{p.direccion}}</td>
+        <td>{{p.nombre}}</td>
+        <td>{{p.numDoc}}</td>
+        <td>{{p.pais}}</td>
+        <td>{{p.telefono1}}</td>
+        <td>{{p.tipoDoc}}</td>
+      </tr>
+    </tbody>
+  </table>
